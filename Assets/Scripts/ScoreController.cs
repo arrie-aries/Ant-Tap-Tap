@@ -16,7 +16,7 @@ public class ScoreController : MonoBehaviour
     {
         killed.text = "Killed: "+ manager.killedScore.ToString();
         missed.text = "Missed: "+ manager.missedScore.ToString();
-        waves.text ="Waves: " + manager.wavesScore.ToString();
+        waves.text ="Waves: " + manager.wavesScoreresult.ToString();
     }
 
    

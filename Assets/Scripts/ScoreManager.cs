@@ -5,8 +5,10 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public int missedScore;
+    public int livesScore = 10;
     public int killedScore;
     public int wavesScore;
+    public int wavesScoreresult;
 
 
     public void PlayermissedScore(int increment)
@@ -19,6 +21,25 @@ public class ScoreManager : MonoBehaviour
     }
     public void PlayerwavesScore(int increment)
     {
-        wavesScore += increment;
+        
+     
+        if ( wavesScore == 10 )
+        {
+            wavesScore = 0;
+            wavesScoreresult+= increment; ;
+        }
+       else
+        {
+            wavesScore += increment;
+        }
+    }
+    public void PlayerlivesScore(int increment)
+    {
+        livesScore = livesScore -1 ;
+
+        if (livesScore == 0)
+        {
+            //GameOver();
+        }
     }
 }

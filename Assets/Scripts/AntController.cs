@@ -11,7 +11,6 @@ public class AntController : MonoBehaviour
     public Vector2 speed;
     Vector2 pos;
     private Rigidbody2D rb;
-    public ScoreManager manager;
     
 
     // Start is called before the first frame update
@@ -33,9 +32,10 @@ public class AntController : MonoBehaviour
     }
 
     
-    void OnMouseDown()
-    {   
-        Destroy(gameObject);
-        manager.PlayerkilledScore(1);     
+    
+    private void OnDestroy()
+    {
+        Debug.Log("destroyed");
+        
     }
 }
