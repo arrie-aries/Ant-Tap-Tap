@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class ScoreManager : MonoBehaviour
 {
@@ -9,8 +10,7 @@ public class ScoreManager : MonoBehaviour
     public int killedScore;
     public int wavesScore;
     public int wavesScoreresult;
-
-
+  
     public void PlayermissedScore(int increment)
     {
         missedScore += increment;
@@ -37,9 +37,6 @@ public class ScoreManager : MonoBehaviour
     {
         livesScore += increment ;
 
-        //if (livesScore == 0)
-        //{
-        //    Debug.Log("GameOver()");
-        //}
+        //void Setup(bool);
     }
 }

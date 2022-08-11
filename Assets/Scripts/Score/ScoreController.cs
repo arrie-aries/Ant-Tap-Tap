@@ -9,8 +9,13 @@ public class ScoreController : MonoBehaviour
     public Text missed;
     public Text waves;
     public Text lives;
+    
 
     public ScoreManager manager;
+   
+    
+
+   
 
 
     private void Update()
