@@ -1097,6 +1097,7 @@ MonoBehaviour:
   - {fileID: 5399314644580892924, guid: 08a8f02d2300eff4c85c800b3ef4d5d2, type: 3}
   - {fileID: 7343457060755007706, guid: bd63bad76af8fcf4183fae9800132721, type: 3}
   - {fileID: 586568376980702190, guid: 7b12a1a1ec235484f87aa02a3403eb79, type: 3}
+  - {fileID: 6882907525643210980, guid: 767cff7602c45c9429fc617999f7f305, type: 3}
   spawnTime: 2
 --- !u!4 &1828940889
 Transform:
