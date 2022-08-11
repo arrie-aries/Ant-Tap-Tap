@@ -35,9 +35,12 @@ namespace Player
                     manager.PlayerkilledScore(1);
                     Destroy(ray.collider.gameObject);
                 }
-                else
-                {
+                if (ray.collider.gameObject.tag == "GoodAnts")
+                 {
                     manager.PlayerlivesScore(-1);
+                    Debug.Log("player health decreased");
+                    Destroy(ray.collider.gameObject);
+
                 }
             }
         }

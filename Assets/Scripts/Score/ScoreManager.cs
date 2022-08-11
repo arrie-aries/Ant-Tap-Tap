@@ -5,7 +5,7 @@ using UnityEngine;
 public class ScoreManager : MonoBehaviour
 {
     public int missedScore;
-    public int livesScore = 10;
+    public int livesScore ;
     public int killedScore;
     public int wavesScore;
     public int wavesScoreresult;
@@ -35,11 +35,11 @@ public class ScoreManager : MonoBehaviour
     }
     public void PlayerlivesScore(int increment)
     {
-        livesScore = livesScore -1 ;
+        livesScore += increment ;
 
-        if (livesScore == 0)
-        {
-            //GameOver();
-        }
+        //if (livesScore == 0)
+        //{
+        //    Debug.Log("GameOver()");
+        //}
     }
 }
