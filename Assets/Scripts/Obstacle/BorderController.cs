@@ -14,6 +14,7 @@ public class BorderController : MonoBehaviour
         {
             manager.PlayermissedScore(1);
             Destroy(collision.gameObject);
+            manager.PlayerlivesScore(-1);
         }
         
     }

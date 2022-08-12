@@ -6,10 +6,11 @@ using UnityEngine.UI;
 public class ScoreManager : MonoBehaviour
 {
     public int missedScore;
-    public int livesScore ;
+    public int livesScore;
     public int killedScore;
     public int wavesScore;
     public int wavesScoreresult;
+    public GameOverScreen gameover;
   
     public void PlayermissedScore(int increment)
     {
@@ -35,8 +36,14 @@ public class ScoreManager : MonoBehaviour
     }
     public void PlayerlivesScore(int increment)
     {
-        livesScore += increment ;
-
+        if (livesScore == 0)
+        {
+            gameover.Setup(killedScore);
+        }
+        else
+        {
+            livesScore += increment;
+        }
         //void Setup(bool);
     }
 }

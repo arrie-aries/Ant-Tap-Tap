@@ -6,7 +6,6 @@ namespace Player
 {
     public class GameManager : MonoBehaviour
     {
-        public int xx;
         public ScoreManager manager;
         public GameOverScreen gameoverscreen;
         int maxScores = 0;
@@ -43,8 +42,7 @@ namespace Player
                 }
                 if (ray.collider.gameObject.tag == "GoodAnts")
                  {
-                    manager.PlayerlivesScore(1);
-                    Debug.Log("player health decreased");
+                    manager.PlayerlivesScore(-1);
                     Destroy(ray.collider.gameObject);
                     GameOver();
 
