@@ -34,13 +34,13 @@ namespace Player
 
 
 
-                if (ray.collider.gameObject.tag == "Ants")
+                if (ray.collider.gameObject.CompareTag("Ants"))
 
                 {
                     manager.PlayerkilledScore(1);
                     Destroy(ray.collider.gameObject);
                 }
-                if (ray.collider.gameObject.tag == "GoodAnts")
+                if (ray.collider.gameObject.CompareTag("GoodAnts"))
                  {
                     manager.PlayerlivesScore(-1);
                     Destroy(ray.collider.gameObject);
