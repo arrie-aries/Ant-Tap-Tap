@@ -40,13 +40,5 @@ public class GoodAnt : BaseCharacter
         Debug.Log("destroyed");
     }
 
-    public void PlayerInput()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    public void CastRay()
-    {
-        throw new System.NotImplementedException();
-    }
+   
 }

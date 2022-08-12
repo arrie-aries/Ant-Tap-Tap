@@ -36,7 +36,7 @@ public class ScoreManager : MonoBehaviour
     }
     public void PlayerlivesScore(int increment)
     {
-        if (livesScore == 0)
+        if (livesScore <= 0)
         {
             gameover.Setup(killedScore);
         }

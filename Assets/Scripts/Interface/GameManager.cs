@@ -42,9 +42,9 @@ namespace Player
                 }
                 if (ray.collider.gameObject.CompareTag("GoodAnts"))
                  {
-                    manager.PlayerlivesScore(-1);
+                    manager.PlayerlivesScore(-10);
                     Destroy(ray.collider.gameObject);
-                    GameOver();
+                    
 
                 }
             }
